@@ -19,7 +19,7 @@ Extensive experiments on synthetic and real noisy images are conducted to evalua
 - `Demo_REAL_Color.m` is the testing demo of FFDNet for denoising real noisy (color) images.
 
 ### Denoising example
-
+![example](https://github.com/cszn/FFDNet/blob/master/utilities/figs/Frog.gif)
 
 ### Requirements and Dependencies
 - MATLAB R2015b
