@@ -23,5 +23,5 @@ Extensive experiments on synthetic and real noisy images are conducted to evalua
 
 ### Requirements and Dependencies
 - MATLAB R2015b
-- Cuda v-8.0 & cuDNN v-5.1
+- Cuda v-8.0 & [cuDNN](https://developer.nvidia.com/cudnn) v-5.1
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
