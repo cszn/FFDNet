@@ -46,7 +46,7 @@ The left is the real noisy image. The right is the denoised image by FFDNet.
 
 # Requirements and Dependencies
 To run the code, you should install Matconvnet first. 
-Alternatively, you can use function [vl_ffdnet_matlab](FFDNet/utilities/vl_ffdnet_matlab.m) to perform denoising without Matconvnet.
+Alternatively, you can use function [vl_ffdnet_matlab](utilities/vl_ffdnet_matlab.m) to perform denoising without Matconvnet.
 - MATLAB R2015b
 - [Cuda](https://developer.nvidia.com/cuda-toolkit-archive)-8.0 & [cuDNN](https://developer.nvidia.com/cudnn) v-5.1
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
