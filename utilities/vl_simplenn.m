@@ -102,7 +102,7 @@ for i=1:n
                 cudnn{:}) ;
             
         case 'concat'
-            if size(sigmas,1)==3 || size(sigmas,1)==1
+            if size(sigmas,1)~=size(res(i).x,1)
                 sigmaMap   = bsxfun(@times,ones(size(res(i).x,1),size(res(i).x,2),1,size(res(i).x,4)),permute(sigmas,[3 4 1 2])) ;
                 res(i+1).x = vl_nnconcat({res(i).x,sigmaMap}) ;
             else
