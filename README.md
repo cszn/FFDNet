@@ -25,6 +25,8 @@ Extensive experiments on synthetic and real noisy images are conducted to evalua
 - `Demo_REAL_Gray.m` is the testing demo of FFDNet for denoising real noisy (grayscale) images.
 - `Demo_REAL_Color.m` is the testing demo of FFDNet for denoising real noisy (color) images.
 
+- `Demo_multivariate_Gaussian_noise.m` is the testing demo of FFDNet for denoising noisy images corrupted by multivariate (3D) Gaussian noise model `N([0,0,0]; Sigma)` with zero mean and covariance matrix `Sigma` in the RGB color space.
+
 
 # Image Denoising for AWGN
 
@@ -50,3 +52,16 @@ Alternatively, you can use function [vl_ffdnet_matlab](utilities/vl_ffdnet_matla
 - MATLAB R2015b
 - [Cuda](https://developer.nvidia.com/cuda-toolkit-archive)-8.0 & [cuDNN](https://developer.nvidia.com/cudnn) v-5.1
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
+
+# Citation
+```
+@article{zhang2018ffdnet,
+  title={FFDNet: Toward a Fast and Flexible Solution for {CNN} based Image Denoising},
+  author={Zhang, Kai and Zuo, Wangmeng and Zhang, Lei},
+  journal={IEEE Transactions on Image Processing},
+  year={2018},
+}
+```
+
+
+
