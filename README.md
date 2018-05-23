@@ -34,6 +34,14 @@ The input image is reshaped to four sub-images, which are then input to the CNN 
 
 # Image Denoising for AWGN
 
+Grayscale Image Denoising
+
+<img src="figs/table1.png" width="500px"/> 
+
+Color Image Denoising
+
+<img src="figs/table2.png" width="500px"/> 
+
 The left is the noisy image corrupted by AWGN with noise level 75. The right is the denoised image by FFDNet.
 
 <img src="utilities/figs/102061_75_75.png" width="321px"/> <img src="utilities/figs/102061_75_75_PSNR_2698.png" width="321px"/>
