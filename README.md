@@ -1,6 +1,6 @@
 # FFDNet
 
-# [FFDNet: Toward a Fast and Flexible Solution for CNN based Image Denoising](/FFDNet_v2.pdf)
+# [FFDNet: Toward a Fast and Flexible Solution for CNN based Image Denoising](https://arxiv.org/pdf/1710.04026.pdf)
 
 
 # Abstract
