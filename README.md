@@ -15,7 +15,11 @@ denoising performance. In contrast to the existing discriminative denoisers, FFD
 
 Extensive experiments on synthetic and real noisy images are conducted to evaluate FFDNet in comparison with state-of-the-art denoisers. The results show that FFDNet is effective and efficient, making it highly attractive for practical denoising applications.
 
-# Test FFDNet models
+# Network Architecture
+![architecture](https://github.com/cszn/FFDNet/blob/master/figs/ffdnet.png)
+The input image is reshaped to four sub-images, which are then input to the CNN together with a noise level map. The final output is reconstructed by the four denoised sub-images
+
+# Test FFDNet Models
 - `Demo_AWGN_Gray.m` is the testing demo of FFDNet for denoising grayscale images corrupted by AWGN.
 - `Demo_AWGN_Color.m` is the testing demo of FFDNet for denoising color images corrupted by AWGN.
 
@@ -32,10 +36,7 @@ Extensive experiments on synthetic and real noisy images are conducted to evalua
 
 The left is the noisy image corrupted by AWGN with noise level 75. The right is the denoised image by FFDNet.
 
-<img src="utilities/figs/05_75_75.png" width="321px"/> <img src="utilities/figs/05_75_75_PSNR_2479.png" width="321px"/>
-
 <img src="utilities/figs/102061_75_75.png" width="321px"/> <img src="utilities/figs/102061_75_75_PSNR_2698.png" width="321px"/>
-
 
 # Real Image Denoising
 
