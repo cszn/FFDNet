@@ -16,8 +16,8 @@ addpath(fullfile('utilities'));
 folderModel = 'models';
 folderTest  = 'testsets';
 folderResult= 'results';
-imageSets   = {'RNI6'};          % testing datasets
-setTestCur  = imageSets{2};      % current testing dataset
+imageSets   = {'RNI6'};         % testing datasets
+setTestCur  = imageSets{1};      % current testing dataset
 
 showResult  = 1;
 useGPU      = 1;
