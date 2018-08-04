@@ -20,16 +20,16 @@ Extensive experiments on synthetic and real noisy images are conducted to evalua
 The input image is reshaped to four sub-images, which are then input to the CNN together with a noise level map. The final output is reconstructed by the four denoised sub-images
 
 # Test FFDNet Models
-- [Demo_AWGN_Gray.m](FFDNet/Demo_AWGN_Gray.m) is the testing demo of FFDNet for denoising grayscale images corrupted by AWGN.
-- [Demo_AWGN_Color.m](FFDNet/Demo_AWGN_Color.m) is the testing demo of FFDNet for denoising color images corrupted by AWGN.
+- [Demo_AWGN_Gray.m](Demo_AWGN_Gray.m) is the testing demo of FFDNet for denoising grayscale images corrupted by AWGN.
+- [Demo_AWGN_Color.m](Demo_AWGN_Color.m) is the testing demo of FFDNet for denoising color images corrupted by AWGN.
 
-- [Demo_AWGN_Gray_Clip.m](FFDNet/Demo_AWGN_Gray_Clip.m) is the testing demo of FFDNet for denoising grayscale images corrupted by AWGN with clipping setting.
-- [Demo_AWGN_Color_Clip.m](FFDNet/Demo_AWGN_Color_Clip.m) is the testing demo of FFDNet for denoising color images corrupted by AWGN with clipping setting.
+- [Demo_AWGN_Gray_Clip.m](Demo_AWGN_Gray_Clip.m) is the testing demo of FFDNet for denoising grayscale images corrupted by AWGN with clipping setting.
+- [Demo_AWGN_Color_Clip.m](Demo_AWGN_Color_Clip.m) is the testing demo of FFDNet for denoising color images corrupted by AWGN with clipping setting.
 
-- [Demo_REAL_Gray.m](FFDNet/Demo_REAL_Gray.m) is the testing demo of FFDNet for denoising real noisy (grayscale) images.
-- [Demo_REAL_Color.m](FFDNet/Demo_REAL_Color.m) is the testing demo of FFDNet for denoising real noisy (color) images.
+- [Demo_REAL_Gray.m](Demo_REAL_Gray.m) is the testing demo of FFDNet for denoising real noisy (grayscale) images.
+- [Demo_REAL_Color.m](Demo_REAL_Color.m) is the testing demo of FFDNet for denoising real noisy (color) images.
 
-- [Demo_multivariate_Gaussian_noise.m](FFDNet/Demo_multivariate_Gaussian_noise.m) is the testing demo of FFDNet for denoising noisy images corrupted by multivariate (3D) Gaussian noise model `N([0,0,0]; Sigma)` with zero mean and covariance matrix `Sigma` in the RGB color space.
+- [Demo_multivariate_Gaussian_noise.m](Demo_multivariate_Gaussian_noise.m) is the testing demo of FFDNet for denoising noisy images corrupted by multivariate (3D) Gaussian noise model `N([0,0,0]; Sigma)` with zero mean and covariance matrix `Sigma` in the RGB color space.
 
 
 # Image Denoising for AWGN
