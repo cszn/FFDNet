@@ -43,7 +43,9 @@ The left is the noisy image from [The Darmstadt Noise Dataset](https://noise.vis
 
 <img src="figs/0033_05.png" width="400px"/> <img src="figs/0033_05_ffdnet.png" width="400px"/>
 
+<img src="figs/0009_15.png" width="400px"/> <img src="figs/0009_15_ffdnet.png" width="400px"/>
 
+<img src="figs/0037_12.png" width="400px"/> <img src="figs/0037_12_ffdnet.png" width="400px"/>
 
 
 # Image Denoising for AWGN
