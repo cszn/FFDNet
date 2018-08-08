@@ -32,6 +32,20 @@ The input image is reshaped to four sub-images, which are then input to the CNN 
 - [Demo_multivariate_Gaussian_noise.m](Demo_multivariate_Gaussian_noise.m) is the testing demo of FFDNet for denoising noisy images corrupted by multivariate (3D) Gaussian noise model `N([0,0,0]; Sigma)` with zero mean and covariance matrix `Sigma` in the RGB color space.
 
 
+# Results on Real Noisy Images from [The Darmstadt Noise Dataset](https://noise.visinf.tu-darmstadt.de/benchmark/#results_srgb)
+
+## PSNR: 37.61dB
+
+
+The left is the noisy image from [The Darmstadt Noise Dataset](https://noise.visinf.tu-darmstadt.de/benchmark/#results_srgb). The right is the denoised image by FFDNet+.
+
+<img src="figs/0001_18.png" width="400px"/> <img src="figs/0001_18_ffdnet.png" width="400px"/>
+
+<img src="figs/0033_05.png" width="400px"/> <img src="figs/0033_05_ffdnet.png" width="400px"/>
+
+
+
+
 # Image Denoising for AWGN
 
 Grayscale Image Denoising
