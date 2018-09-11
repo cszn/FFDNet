@@ -2,6 +2,10 @@
 
 # [FFDNet: Toward a Fast and Flexible Solution for CNN based Image Denoising](https://arxiv.org/pdf/1710.04026.pdf)
 
+# New Training and Testing Codes ([PyTorch](http://www.ipol.im/pub/pre/231/))
+
+## [FFDNet-pytorch](http://www.ipol.im/pub/pre/231/)
+### [An Analysis and Implementation of the FFDNet Image Denoising Method](http://www.ipol.im/pub/pre/231/)
 
 # Abstract
 Due to the fast inference and good performance, discriminative learning methods have been widely studied in image denoising. However, these methods mostly learn a specific model for each noise level, and require multiple models for denoising images with different noise levels. They also lack flexibility to deal with spatially variant noise, limiting their applications in practical denoising. 
