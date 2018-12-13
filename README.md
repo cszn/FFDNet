@@ -74,6 +74,11 @@ The left is the real noisy image. The right is the denoised image by FFDNet.
 
 ![example](https://github.com/cszn/FFDNet/blob/master/utilities/figs/Frog.gif)
 
+# Extension
+
+<img src="models/multivariate Gaussian noise .png" width="500px"/> 
+
+- [Demo_multivariate_Gaussian_noise.m](Demo_multivariate_Gaussian_noise.m) is the testing demo of FFDNet for denoising noisy images corrupted by multivariate (3D) Gaussian noise model `N([0,0,0]; Sigma)` with zero mean and covariance matrix `Sigma` in the RGB color space.
 
 # Requirements and Dependencies
 To run the code, you should install Matconvnet first. 
