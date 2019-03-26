@@ -7,6 +7,52 @@
 ## [FFDNet-pytorch](http://www.ipol.im/pub/pre/231/)
 ### [An Analysis and Implementation of the FFDNet Image Denoising Method](http://www.ipol.im/pub/pre/231/)
 
+# PixelUnshuffle layer (PyTorch)
+
+``` python
+
+def pixel_unshuffle(input, upscale_factor):
+    r"""Rearranges elements in a Tensor of shape :math:`(C, rH, rW)` to a
+    tensor of shape :math:`(*, r^2C, H, W)`.
+    written by: Zhaoyi Yan, https://github.com/Zhaoyi-Yan
+    and Kai Zhang, https://github.com/cszn/FFDNet
+    01/01/2019
+    """
+    batch_size, channels, in_height, in_width = input.size()
+
+    out_height = in_height // upscale_factor
+    out_width = in_width // upscale_factor
+
+    input_view = input.contiguous().view(
+        batch_size, channels, out_height, upscale_factor,
+        out_width, upscale_factor)
+
+    channels *= upscale_factor ** 2
+    unshuffle_out = input_view.permute(0, 1, 3, 5, 2, 4).contiguous()
+    return unshuffle_out.view(batch_size, channels, out_height, out_width)
+
+
+class PixelUnShuffle(Module):
+    r"""Rearranges elements in a Tensor of shape :math:`(C, rH, rW)` to a
+    tensor of shape :math:`(*, r^2C, H, W)`.
+    written by: Zhaoyi Yan, https://github.com/Zhaoyi-Yan
+    and Kai Zhang, https://github.com/cszn/FFDNet
+    01/01/2019
+    """
+
+    def __init__(self, upscale_factor):
+        super(PixelUnShuffle, self).__init__()
+        self.upscale_factor = upscale_factor
+
+    def forward(self, input):
+        return pixel_unshuffle(input, self.upscale_factor)
+
+    def extra_repr(self):
+        return 'upscale_factor={}'.format(self.upscale_factor)
+
+```
+
+
 # Abstract
 Due to the fast inference and good performance, discriminative learning methods have been widely studied in image denoising. However, these methods mostly learn a specific model for each noise level, and require multiple models for denoising images with different noise levels. They also lack flexibility to deal with spatially variant noise, limiting their applications in practical denoising. 
 To address these issues, we present a fast and flexible denoising convolutional neural network, namely FFDNet, with a tunable noise level map as the input. 
