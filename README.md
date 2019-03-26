@@ -10,6 +10,8 @@
 # PixelUnshuffle layer (PyTorch)
 
 ``` python
+from torch.nn import Module
+
 
 def pixel_unshuffle(input, upscale_factor):
     r"""Rearranges elements in a Tensor of shape :math:`(C, rH, rW)` to a
