@@ -2,7 +2,12 @@
 
 # [FFDNet: Toward a Fast and Flexible Solution for CNN based Image Denoising](https://arxiv.org/pdf/1710.04026.pdf)
 
-# New Training and Testing Codes ([PyTorch](http://www.ipol.im/pub/pre/231/))
+# New training and testing codes ([PyTorch](https://github.com/cszn/KAIR)) - 18/12/2019
+- [main_train_ffdnet.py](https://github.com/cszn/KAIR/blob/master/main_train_ffdnet.py)
+
+- [main_test_ffdnet.py](https://github.com/cszn/KAIR/blob/master/main_test_ffdnet.py)
+
+# Training and Testing Codes ([PyTorch](http://www.ipol.im/pub/pre/231/))
 
 ## [FFDNet-pytorch](http://www.ipol.im/pub/pre/231/)
 ### [An Analysis and Implementation of the FFDNet Image Denoising Method](http://www.ipol.im/pub/pre/231/)
