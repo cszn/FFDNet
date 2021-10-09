@@ -1,5 +1,7 @@
 # FFDNet
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=cszn/FFDNet) 
+
 # [FFDNet: Toward a Fast and Flexible Solution for CNN based Image Denoising](https://arxiv.org/pdf/1710.04026.pdf)
 
 # New training and testing codes ([PyTorch](https://github.com/cszn/KAIR)) - 18/12/2019
